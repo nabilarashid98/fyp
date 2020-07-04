@@ -68,7 +68,7 @@
         </div>     
     </form>
 
-    <p class="text-center"><a href="{{route('userregister')}}">Create an Account</a></p>
+    <p class="text-center"><a href="{{route('userregister')}}">Create a Account</a></p>
 </div>
 </body>
 </html>
