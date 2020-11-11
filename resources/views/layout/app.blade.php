@@ -16,7 +16,7 @@ $role = session()->get('role');
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-    <title>Carousel Template · Bootstrap</title>
+    <title>Screening Test For Parents With Dyslexia Children</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
@@ -39,11 +39,13 @@ $role = session()->get('role');
     <!-- Custom styles for this template -->
     <link href=" {{ asset('carousel/carousel.css') }}" rel="stylesheet" media="all">
     <link href=" {{ asset('css/bootstrap.css') }}" rel="stylesheet" media="all">
+
   </head>
   <body>
     <header>
+      <body style="background-color:blanchedalmond;">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Carousel</a>
+    <a class="navbar-brand" href="#">Screening Test For Parents With Dyslexia Children</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,13 +56,42 @@ $role = session()->get('role');
         </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dyslexia Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('whatisdyslexia')}}">What is Dyslexia</a>
+           <a class="dropdown-item" href="{{ route('dyslexiasignandsymptoms')}}">Dyslexia Sign and Symptoms</a>
+          <a class="dropdown-item" href="{{ route('treatdyslexia')}}">How Dyslexia is Diagnosed</a>
+          <a class="dropdown-item" href="{{ route('mythsdyslexia')}}">Myths of Dyslexia</a>
+          <a class="dropdown-item" href="{{ route('methodteachingdyslexia')}}">Method Teaching for Dyslexia</a>
+      </li>
+     
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Forum
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ route('addforum')}}">Add Forum</a>
           <a class="dropdown-item" href="{{ route('listforum')}}">List Forum</a>
       </li>
+
+      <li class="nav-item active">
+          <a class="nav-link" href="{{ route('screening') }}">Screening Test</a>
+        </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Center and School
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('listcenter')}}">List Center</a>
+          <a class="dropdown-item" href="{{ route('listschool')}}">List School</a>
+          <a class="dropdown-item" href="{{ route('applypkk')}}">How to apply PKK and Big Examination</a>
+      </li>
+
       </ul>
+
+
+       
 
       <form class="form-inline my-2 my-lg-0">
       <ul>

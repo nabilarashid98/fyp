@@ -63,6 +63,11 @@
             <button type="submit" class="btn btn-primary btn-block">Log in</button>
         </div>   
         <div class="form-group">
+            <button type="button" class="btn btn-primary btn-block"  onclick="window.location='{{ action('LoginController@redirectToProvider') }}'">Log in With Google</button>
+            
+        </div>
+
+        <div class="form-group">
         
             
         </div>     
