@@ -7,29 +7,31 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     //
-    public function index(){
+    public function index()
+    {
 
-      return view ('main/index');
+        return view('main/index');
     }
 
-     public function about()
+    public function about()
     {
         return view('about');
     }
 
-   public function school()
+    public function school()
     {
         return view('school');
     }
 
-     public function mainscreening()
+    public function mainscreening()
     {
         return view('mainscreening');
     }
 
-     public function applypkk()
+    public function applypkk()
     {
         return view('applypkk');
     }
 
+    
 }

@@ -77,7 +77,7 @@ img {
 
 <h1>6 Common Myths About Dyslexia</h1>
 
-<img src="images/image 1.jpg" width="460" height="345" alt="home">
+<img src="{{ url('/images/image1.jpg') }}" width="460" height="345" alt="home">
 
 <p class="b">Scientists know more than ever about dyslexia. <br>
 	But there are still a lot of misconceptions about this common learning difference.<br>
@@ -86,13 +86,13 @@ img {
 
 <div class="row">
   <div class="column">
-    <img class="img-responsive" asset="images/myth 1.png" alt="myth 1" style="width:100%">
+    <img class="img-responsive" src="{{ url('/images/myth1.png') }}" alt="myth 1" style="width:100%">
   </div>
   <div class="column">
-    <img class="img-responsive" asset="images/myth 2.png" alt="myth 2" style="width:100%">
+    <img class="img-responsive" src="{{ url('/images/myth2.png') }}" alt="myth 2" style="width:100%">
   </div>
   <div class="column">
-    <img class="img-responsive" asset="images/myth 3.png" alt="myth 3" style="width:100%">
+    <img class="img-responsive" src="{{ url('/images/myth3.png') }}" alt="myth 3" style="width:100%">
   </div>
 </div>
 
@@ -103,13 +103,13 @@ img {
 
 <div class="row">
   <div class="column">
-    <img class="img-responsive" asset="images/myth 4.png" alt="myth 4" style="width:100%">
+    <img class="img-responsive" src="{{ url('/images/myth4.png') }}" alt="myth 4" style="width:100%">
   </div>
   <div class="column">
-    <img class="img-responsive" asset="images/myth 5.png" alt="myth 5" style="width:100%">
+    <img class="img-responsive" src="{{ url('/images/myth5.png') }}" alt="myth 5" style="width:100%">
   </div>
   <div class="column">
-    <img class="img-responsive" asset="images/myth 6.png" alt="myth 6" style="width:100%">
+    <img class="img-responsive" src="{{ url('/images/myth6.png') }}" alt="myth 6" style="width:100%">
   </div>
 </div>
 

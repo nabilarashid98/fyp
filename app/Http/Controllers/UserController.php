@@ -55,5 +55,18 @@ class UserController extends Controller
 
     }
 
+    // public function get_image($name) {
+
+    //     $path = storage_path($name);
+
+    //     $mime = \File::mimeType($path);
+    
+    //     header('Content-type: ' . $mime);
+    
+    //     return readfile($path);
+    
+    // }
+    
+
 
 }
