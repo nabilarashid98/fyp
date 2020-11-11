@@ -73,3 +73,4 @@ Route::post('/forum/update/{id}', 'ForumController@update')->name('updateforum')
 //comment
 Route::post('/comment/add', 'CommentController@store')->name('addcomment');
 Route::get('/comment/delete/{id}', 'CommentController@destroy');
+
