@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <style>
-  body {
+	body {
     background-color: #E0E0E0
 
 }
@@ -47,17 +48,8 @@ h1 {
   text-align: center;
 }
 
-h3 {
-  text-align: center;
-}
-
 p{
-  text-align: left;
-}
-
-
-h1 {
-  text-align: center;
+	text-align: left;
 }
 
 img {
@@ -98,38 +90,45 @@ youtube {
 </style>
 </head>
 <body>
-  
-  <div class="row mt-100">
+	
+	<div class="row mt-100">
     <div class="col-md-8">
         <div class="card">
-          <br>
+        	<br>
             
-                <h1>Procedure to apply PPKI and additional time during examination</h1>
+                <h1 class="text-center">Activities with dyslexia kids.</h5>
 
-                <br>  
+                <br>	
             
                <div class="row">
              <div class="column">
             <div class="card-block">
                 <p class="text-center">
-                  
+                	
 
-<img class="img-responsive" src="{{url('images/ppki.jpg')}}" width="400" height="400" alt="home">
-<br>
-<br>
+<img class="img-responsive" src="{{url('images/new3.jpg')}}" width="460" height="300" alt="home">
 
 <h5> What is PPKI ? 
 </h5>
-<p class=>Schools that have classes for special students are fully administered by the State Education Department, Ministry of Education Malaysia</p>
+<p> If you feel like your child is at risk for dyslexia, here are some of the activities that can be very effective in helping them improve skills that can allow them to compensate for the challenges that accompany the disability.
+  <br>
+
+These activities are useful for all kids, but especially those at risk for dyslexia.</p>
     <br>
 
-<h5> Who can enroll in the Special Education Integration Program (PPKI) ? 
+<h5> Fine motor activities
 </h5>
+<p> Fine motor skills are necessary for the activities that involve smaller movements in wrists, hands and fingers. They are crucial for our ability to perform most of the usual, daily self-care tasks such as buttoning clothes, cutting food, tying our shoes or brushing teeth, but also for precise coloring, drawing and writing.
+  <br>
+
+Activities that can help with improving these skills: </p>
+
 <ul>
-  <li>The students with visual impairments.</li>
-  <li>The students with hearing problems</li>
-  <li>The studentss with learning difficulties</li>
+  <li>Easy crafts for kids. Give them opportunities to use different materials such as paper, cardboard, wood or glue, and color, cut or combine them to make something new.</li>
+  <li>Coloring exercises, mazes on paper or exercises that involve drawing shapes of different sizes.</li>
+  <li>Beading, sewing, knitting etc.</li>
 </ul>  
+  <p><a href="https://handsonaswegrow.com/fine-motor-skills-activities/">You can find more ideas here!</a></p>
     <br>
 
 <h5> Characteristic of students with special needs ? 
@@ -151,7 +150,7 @@ youtube {
 </h5>
 <ul>
   <li>Get the BPPOKU form issued by JKM, (OKU registration application form).<br>
-  	  <p><a href="https://www.moh.gov.my/index.php/file_manager/dl_item/624746305a584e305833426b5a69397661335576516d39795957356e5831426c6257396f62323568626c39515a57356b59575a3059584a68626c3950533155756347526d">Borang BPPOKU</a></p>
+      <p><a href="https://www.moh.gov.my/index.php/file_manager/dl_item/624746305a584e305833426b5a69397661335576516d39795957356e5831426c6257396f62323568626c39515a57356b59575a3059584a68626c3950533155756347526d">Borang BPPOKU</a></p>
   </li>
   <li>Fill in the BPPOKU form from JKM and get the doctor's confirmation</li>
   <li>Submit a copy to PPD to apply for admission to PPKI</li>
@@ -175,10 +174,11 @@ youtube {
 
 
 
-
-
 </body>
 
 </html>
 
+
 @endsection
+
+

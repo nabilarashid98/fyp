@@ -32,4 +32,9 @@ class MainController extends Controller
         return view('applypkk');
     }
 
+   
+   public function financesupport()
+    {
+        return view('financesupport');
+    }
 }

@@ -1,15 +1,58 @@
 @extends('layout.app')
 
 @section('content')
- <br>
- <br>
- <br>
+
+ 
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <style>
+	body {
+    background-color: #E0E0E0
+
+}
+
+body {margin:10px;}
+
+div.polaroid {
+  width: 40%;
+  background-color: pink;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: 50px;
+}
+
+div.container {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+    margin-left: 200px
+}
+
+.card-header {
+    background-color: #DA95DE 
+}
+
+h5 {
+    color: #fff
+}
+
+.card-block {
+    margin-top: 10px
+}
+
 p.a {
   font: 20px Arial, sans-serif;
 }
@@ -31,35 +74,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  left: 105%;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 .row {
   display: flex;
@@ -67,51 +82,130 @@ img {
 
 /* Create three equal columns that sits next to each other */
 .column {
-  flex: 33.33%;
+  flex: 50%;
   padding: 5px;
 }
 
 </style>
 </head>
 <body>
+	
+	<div class="row mt-100">
+    <div class="col-md-8">
+        <div class="card">
+        	<br>
+            
+                <h1 class="text-center">6 Myths of Dyslexia</h5>
 
-<h1>6 Common Myths About Dyslexia</h1>
+                <br>	
+            
+               <div class="row">
+             <div class="column">
+            <div class="card-block">
+                <p class="text-center">
+                	
 
-<img src="images/image 1.jpg" width="460" height="345" alt="home">
+<img class="img-responsive" src="{{url('images/image 1.jpg')}}" width="460" height="345" alt="home">
 
 <p class="b">Scientists know more than ever about dyslexia. <br>
 	But there are still a lot of misconceptions about this common learning difference.<br>
 	That can make it hard to know what’s accurate and how to best support your child.<br>
     Here’s the truth behind seven myths about dyslexia.</p>
+    <br>
 
+
+  
+ 
+ 
+<div class="row">
+<div class="polaroid">
+	<div class="container"> 
 <div class="row">
   <div class="column">
-    <img class="img-responsive" asset="images/myth 1.png" alt="myth 1" style="width:100%">
+  <img class="img-responsive" src="{{url('images/myth1.png')}}" alt="myth 1" style="width:70%">
+   <p>Cinque Terre</p>
+
+   
   </div>
-  <div class="column">
-    <img class="img-responsive" asset="images/myth 2.png" alt="myth 2" style="width:100%">
+ 
   </div>
-  <div class="column">
-    <img class="img-responsive" asset="images/myth 3.png" alt="myth 3" style="width:100%">
   </div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
 
-<div class="row">
+  <div class="polaroid">
+  <div class="container"> 
   <div class="column">
-    <img class="img-responsive" asset="images/myth 4.png" alt="myth 4" style="width:100%">
-  </div>
-  <div class="column">
-    <img class="img-responsive" asset="images/myth 5.png" alt="myth 5" style="width:100%">
-  </div>
-  <div class="column">
-    <img class="img-responsive" asset="images/myth 6.png" alt="myth 6" style="width:100%">
+    <img class="img-responsive" src="{{url('images/myth2.png')}}" alt="myth 2" style="width:70%">
+    <p>Cinque Terre</p>
   </div>
 </div>
+</div>
+</div>
+
+ <div class="row">
+<div class="polaroid">
+	<div class="container"> 
+<div class="row">
+  <div class="column">
+  <img class="img-responsive" src="{{url('images/myth3.png')}}" alt="myth 1" style="width:70%">
+   <p>Cinque Terre</p>
+
+   
+  </div>
+ 
+  </div>
+  </div>
+</div>
+
+
+  <div class="polaroid">
+  <div class="container"> 
+  <div class="column">
+    <img class="img-responsive" src="{{url('images/myth4.png')}}" alt="myth 2" style="width:70%">
+    <p>Cinque Terre</p>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="polaroid">
+	<div class="container"> 
+<div class="row">
+  <div class="column">
+  <img class="img-responsive" src="{{url('images/myth5.png')}}" alt="myth 1" style="width:70%">
+   <p>Cinque Terre</p>
+
+   
+  </div>
+ 
+  </div>
+  </div>
+</div>
+
+
+  <div class="polaroid">
+  <div class="container"> 
+  <div class="column">
+    <img class="img-responsive" src="{{url('images/myth6.png')}}" alt="myth 2" style="width:70%">
+    <p>Cinque Terre</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>

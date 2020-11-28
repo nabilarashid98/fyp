@@ -38,12 +38,20 @@ Route::post('/screening/post', 'ScreeningtestController@post')->name('postscreen
 Route::get('/main','MainController@index')->name('mainpage');
 Route::get('/mainscreening','MainController@mainscreening')->name('mainscreening');
 Route::get('/applypkk','MainController@applypkk')->name('applypkk');
+Route::get('/financesupport','MainController@financesupport')->name('financesupport');
+
+//Feedback
+Route::get('/feedback', ['uses' => 'FeedbackController@create']);
+Route::post('/feedback', ['as'=>'feedback.store','uses'=>'FeedbackController@store']);
+
 
 Route::get('/forum/addforum','ForumController@addforum')->name('addforum');
 Route::get('/forum/listforum','ForumController@listforum')->name('listforum');
 Route::get('/forum/detailforum/{id}','ForumController@detailforum')->name('detailforum');
 Route::post('/user/store', 'UserController@store')->name('userstore');
 Route::post('/forum/store', 'ForumController@store')->name('storeforum');
+Route::get('/upload', 'UploadController@index');
+Route::post('/upload', 'UploadController@store');
 
 //Dyslexia Info
 Route::get('/dyslexiainfo/whatisdyslexia','DyslexiaController@whatisdyslexia')->name('whatisdyslexia');
@@ -51,12 +59,15 @@ Route::get('/dyslexiainfo/treatdyslexia','DyslexiaController@treatdyslexia')->na
 Route::get('/dyslexiainfo/mythsdyslexia','DyslexiaController@mythsdyslexia')->name('mythsdyslexia');
 Route::get('/dyslexiainfo/methodteachingdyslexia','DyslexiaController@methodteachingdyslexia')->name('methodteachingdyslexia');
 Route::get('/dyslexiainfo/dyslexiasignandsymptoms','DyslexiaController@dyslexiasignandsymptoms')->name('dyslexiasignandsymptoms');
+Route::get('/dyslexiainfo/activitieswithdyslexiakids','DyslexiaController@activitieswithdyslexiakids')->name('activitieswithdyslexiakids');
 
 //login
 Route::post('/login','LoginController@login')->name('login');
 
 Route::get('login/google', 'LoginController@redirectToProvider');
 Route::get('login/google/callback', 'LoginController@handleProviderCallback');
+
+
 
 //logout
 Route::get('/logout','LoginController@logout')->name('logout');

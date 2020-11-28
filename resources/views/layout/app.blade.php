@@ -64,6 +64,7 @@ $role = session()->get('role');
           <a class="dropdown-item" href="{{ route('treatdyslexia')}}">How Dyslexia is Diagnosed</a>
           <a class="dropdown-item" href="{{ route('mythsdyslexia')}}">Myths of Dyslexia</a>
           <a class="dropdown-item" href="{{ route('methodteachingdyslexia')}}">Method Teaching for Dyslexia</a>
+           <a class="dropdown-item" href="{{ route('activitieswithdyslexiakids')}}">Activitie to support dyslexia kids</a>
       </li>
      
         <li class="nav-item dropdown">
@@ -78,6 +79,11 @@ $role = session()->get('role');
       <li class="nav-item active">
           <a class="nav-link" href="{{ route('screening') }}">Screening Test</a>
         </li>
+
+           <li class="nav-item active">
+          <a class="nav-link" href="{{ route('financesupport') }}">Finance Support</a>
+        </li>
+
           <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Center and School

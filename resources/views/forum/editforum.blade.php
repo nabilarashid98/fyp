@@ -19,6 +19,13 @@
                             <label class="label">Forum Body: </label>
                             <textarea name="body" rows="10" cols="30" name="body" class="form-control" required>{{$detailforum->body}}</textarea>
                         </div>
+                      <div>
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                         {{ csrf_field() }}
+                        <input type="file" accept="image/*" name="file">
+                        <button type="submit">Submit</button>
+                         </form>
+                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-success" />
                         </div>

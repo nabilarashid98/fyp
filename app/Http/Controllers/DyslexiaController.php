@@ -33,4 +33,9 @@ class DyslexiaController extends Controller
     {
         return view('dyslexiasignandsymptoms');
     }
+
+    public function activitieswithdyslexiakids()
+    {
+        return view('activitieswithdyslexiakids');
+    }
 }

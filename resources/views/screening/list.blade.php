@@ -81,15 +81,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="one" value="YES">
+                                    <input type="radio" id="YES" name="thre" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="one" value="NO">
+                                    <input type="radio" id="NO" name="three" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="one" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="three" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -245,15 +245,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="one" value="YES">
+                                    <input type="radio" id="YES" name="ten" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="one" value="NO">
+                                    <input type="radio" id="NO" name="ten" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="one" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="ten" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -267,15 +267,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="eleven" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="eleven" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="eleven" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -289,15 +289,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="twelve" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="twelve" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="twelve" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -325,15 +325,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="one" value="YES">
+                                    <input type="radio" id="YES" name="thirteen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="one" value="NO">
+                                    <input type="radio" id="NO" name="thirteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="one" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="thirteen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -347,15 +347,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="fourteen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="fourteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="fourteen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -369,15 +369,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="fifteen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="fifteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="fifteen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -391,15 +391,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="sixteen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="sixteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="sixteen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -426,15 +426,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="one" value="YES">
+                                    <input type="radio" id="YES" name="seventeen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="one" value="NO">
+                                    <input type="radio" id="NO" name="seveteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="one" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="seventeen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -448,15 +448,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="eighteen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="eighteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="eighteen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -470,15 +470,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="nineteen" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="nineteen" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="nineteen" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -492,15 +492,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="twenty" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="twenty" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="twenty" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -530,15 +530,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="one" value="YES">
+                                    <input type="radio" id="YES" name="twentyone" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="one" value="NO">
+                                    <input type="radio" id="NO" name="twentyone" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="one" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="twentyone" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>
@@ -554,15 +554,15 @@
                         <div class="form-check-inline form-check">
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="radio" id="YES" name="two" value="YES">
+                                    <input type="radio" id="YES" name="twentytwo" value="YES">
                                     <label for="male">YES</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="NO" name="two" value="NO">
+                                    <input type="radio" id="NO" name="twentytwo" value="NO">
                                     <label for="male">NO</label><br>
                                 </div>
                                 <div class="col-12">
-                                    <input type="radio" id="MAYBE" name="two" value="MAYBE">
+                                    <input type="radio" id="MAYBE" name="twentytwo" value="MAYBE">
                                     <label for="male">MAYBE</label><br>
                                 </div>
                             </div>

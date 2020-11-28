@@ -284,10 +284,10 @@ class ScreeningtestController extends Controller
             $countmaybe = $countmaybe + 1;
         }
         //condition
-        if($countyes >= 25 || $countmaybe >= 25){
-            $result = 'your children might have a dyslexia';
+        if($countyes >= 10 || $countmaybe >= 10){
+            $result = 'Your children might have a dyslexia';
         } else {
-            $result = 'children dont have a dyslexia';
+            $result = 'Your children dont have a dyslexia';
         }
 
         return view('screening/result', compact('result'));

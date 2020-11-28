@@ -8,9 +8,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Result</div>
+                <br>
+                <h1 class="center">Result</h1>
                 <div class="card-body">
                         <div class="form-group">
+                            <h3>Dyslexia Warning Signs</h3>
                             <label class="label">{{$result}}</label>
                         </div>
                     </form>
