@@ -1,10 +1,10 @@
-@extends('layout.app')
-@section('content')
+@extends('layout.adminapp')
 
+@section('content')
 <br>
 <br>
 <div class="container">
-	<div class="row">       
+    <div class="row">       
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
                             @if(Session::has('flash_message'))
@@ -17,34 +17,29 @@
                         <div class="col-sm-2"></div>
                       
                 </div>
-
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
         <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
                 <th>No</th>
+                <th>Name</th>
                 <th>Title</th>
+                <th>Body</th>
                 <th>Action</th>
             </tr>
         </thead>
-        	@foreach($forum as $data)
-        <tbody>    
-            @if($data->userId == $userinfo->id)   
+        @foreach($finalarray as $data)
+        <tbody>       
             <tr>
                 <td>{{$i++}}</td>
-                <td>{{$data->title}}</td>
-                <td><a href="{{ action('ForumController@detailforum', $data->id) }}"><span class="badge badge-primary">view</span></a> | <a onclick="return confirm('Are you sure you want to delete?')" href="{{ action('ForumController@destroy', $data->id) }}"><span class="badge badge-danger">delete</span></a> </td>
-            </tr>  
-            @else
-            <tr>
-                <td>{{$i++}}</td>
-                <td>{{$data->title}}</td>
-                <td><a href="{{ action('ForumController@detailforum', $data->id) }}"><span class="badge badge-primary">view</span></a> </td>
-            </tr>  
-            @endif 
+                <td>{{$data['username']}}</td>
+                <td>{{$data['title']}}</td>
+                <td>{{$data['body']}}</td>
+                <td><a href="{{ action('AdminController@detailforum', $data['id']) }}"><span class="badge badge-primary">comment</span></a> | <a onclick="return confirm('Are you sure you want to delete?')" href="{{ action('AdminController@destroyforum', $data['id']) }}"><span class="badge badge-danger">delete</span></a> </td>
+            </tr>   
         </tbody>
-        @endforeach
+        @endforeach 
     </table>
         </div>
     </div>

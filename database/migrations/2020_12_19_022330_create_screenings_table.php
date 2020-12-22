@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Feedback extends Migration
+class CreateScreeningsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class Feedback extends Migration
      */
     public function up()
     {
-          Schema::create('feedback', function (Blueprint $table) {
+        Schema::create('screenings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('phonenumber');
-            $table->string('message');
+            $table->string('username')->nullable();
+            $table->string('totalyes')->nullable();
+            $table->string('totalno')->nullable();
+            $table->string('totalmaybe')->nullable();
+            $table->string('result')->nullable();
             $table->timestamps();
-
         });
     }
 
@@ -31,6 +31,6 @@ class Feedback extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('feedback');
+        Schema::dropIfExists('screenings');
     }
 }

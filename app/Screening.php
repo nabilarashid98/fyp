@@ -4,9 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Feedback extends Model
+class Screening extends Model
 {
     //
-    public $table = 'Feedbacks';
-
 }

@@ -1,16 +1,18 @@
 @extends('layout.app')
 
 @section('content')
+<br>
+<br>
+<div class="row">       
+    <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+         @if(Session::has('flash_message'))
+       <div class="alert alert-success"><span class="fa fa-check"></span><em> {!! session('flash_message') !!}</em></div>
+         @endif
+      </div>
+      <div class="col-sm-2"></div>
+</div>
 
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <style>
   .form-control{
@@ -102,7 +104,7 @@ form.go-right input:focus + label, form.go-right textarea:focus + label {
 }
 
 </style>
-</head>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -264,9 +266,12 @@ form.go-right input:focus + label, form.go-right textarea:focus + label {
 
 <div class="container">
     <div class="row">
-             <form role="form" class="col-md-9 go-right">
+             <form role="form" class="col-md-9 go-right" method="POST" action="{{ route('storefeedback') }}">
+            {{ csrf_field() }}
+
             <h2>Feedback Form</h2>
             <p>We welcome for your feedback and we will try to implement it into our website.</p>
+          
             
             <div class="form-group">
             <input id="name" name="name" type="text" class="form-control" required>
@@ -276,17 +281,17 @@ form.go-right input:focus + label, form.go-right textarea:focus + label {
             <input id="email" name="email" type="email" class="form-control" required>
             <label for="email">Email Address</label>
         </div>
+       
         <div class="form-group">
-            <input id="phone" name="phone" type="tel" class="form-control" required>
-            <label for="phone">Primary Phone</label>
+            <textarea id="description" name="description" class="form-control" style="height: 150px" required></textarea>
+            <label for="description">Message</label>
         </div>
+
         <div class="form-group">
-            <textarea id="message" name="phone" class="form-control" style="height: 150px" required></textarea>
-            <label for="message">Message</label>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+          <button type="submit" class="btn btn-primary">
+                                         Submit
+                                     </button>
+                                   </div>
         </form>
     </div>
 </div>

@@ -41,8 +41,7 @@ Route::get('/applypkk','MainController@applypkk')->name('applypkk');
 Route::get('/financesupport','MainController@financesupport')->name('financesupport');
 
 //Feedback
-Route::get('/feedback', ['uses' => 'FeedbackController@create']);
-Route::post('/feedback', ['as'=>'feedback.store','uses'=>'FeedbackController@store']);
+Route::post('/feedback/store', 'FeedbackController@store')->name('storefeedback');
 
 
 Route::get('/forum/addforum','ForumController@addforum')->name('addforum');
@@ -84,3 +83,13 @@ Route::post('/forum/update/{id}', 'ForumController@update')->name('updateforum')
 //comment
 Route::post('/comment/add', 'CommentController@store')->name('addcomment');
 Route::get('/comment/delete/{id}', 'CommentController@destroy');
+
+//admin
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin/feedback', 'AdminController@feedback')->name('adminfeedback');
+Route::get('/admin/screening', 'AdminController@screening')->name('adminscreening');
+Route::get('/admin/forum', 'AdminController@forum')->name('adminforum');
+Route::get('/admin/forum/delete/{id}','AdminController@destroyforum');
+Route::get('/admin/forum/details/{id}', 'AdminController@detailforum')->name('admindetailforum');
+Route::get('/admin/forum/comment/delete/{id}', 'AdminController@destroycomment');
+Route::post('/admin/forum/comment/add', 'AdminController@storecomment')->name('adminaddcomment');

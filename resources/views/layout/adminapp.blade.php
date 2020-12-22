@@ -4,6 +4,7 @@ $username = session()->get('username');
 $password = session()->get('password');
 $name = session()->get('name');
 $role = session()->get('role');
+$userid = session()->get('userid');
 
 ?>
 
@@ -51,51 +52,22 @@ $role = session()->get('role');
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
      <ul class="navbar-nav mr-auto">
+       
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('mainpage') }}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ route('admin') }}">Users</a>
         </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dyslexia Info
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ route('whatisdyslexia')}}">What is Dyslexia</a>
-           <a class="dropdown-item" href="{{ route('dyslexiasignandsymptoms')}}">Dyslexia Sign and Symptoms</a>
-          <a class="dropdown-item" href="{{ route('treatdyslexia')}}">How Dyslexia is Diagnosed</a>
-          <a class="dropdown-item" href="{{ route('mythsdyslexia')}}">Myths of Dyslexia</a>
-          <a class="dropdown-item" href="{{ route('methodteachingdyslexia')}}">Method Teaching for Dyslexia</a>
-           <a class="dropdown-item" href="{{ route('activitieswithdyslexiakids')}}">Activitie to support dyslexia kids</a>
-      </li>
-     
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Forum
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ route('addforum')}}">Add Forum</a>
-          <a class="dropdown-item" href="{{ route('listforum')}}">List Forum</a>
-      </li>
-
-      <li class="nav-item">
-          <a class="nav-link" href="{{ route('screening') }}">Screening Test</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('adminscreening') }}">Screening Test</a>
         </li>
-
-           <li class="nav-item">
-          <a class="nav-link" href="{{ route('financesupport') }}">Finance Support</a>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('adminforum') }}">Forum</a>
         </li>
-
-          <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Center and School
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ route('listcenter')}}">List Center</a>
-          <a class="dropdown-item" href="{{ route('listschool')}}">List School</a>
-          <a class="dropdown-item" href="{{ route('applypkk')}}">How to apply PKK and Big Examination</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('adminfeedback') }}">Feedback</a>
+        </li>
+        
 
       </ul>
-
 
        
 

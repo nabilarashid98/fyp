@@ -1,12 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Screening;
+use App\User;
 use Illuminate\Http\Request;
 
 class ScreeningtestController extends Controller
 {
     //
+
+    public function getinfo() {
+    $username = session()->get('username');
+    $password = session()->get('password');
+    $role = session()->get('role');
+
+    $user = User::all()->where('username', $username)->where('password', $password)
+   ->first();
+return $user;
+    }
 
     public function index(){
 
@@ -289,6 +300,17 @@ class ScreeningtestController extends Controller
         } else {
             $result = 'Your children dont have a dyslexia';
         }
+
+       $user = $this->getinfo();
+
+        $screening = new Screening;
+        $screening->username = $user->name;
+        $screening->totalyes = $countyes;
+        $screening->totalno = $countno;
+        $screening->totalmaybe = $countmaybe;
+        $screening->result = $result;
+
+        $screening->save();
 
         return view('screening/result', compact('result'));
 

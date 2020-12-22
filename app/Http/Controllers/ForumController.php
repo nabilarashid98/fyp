@@ -32,8 +32,10 @@ class ForumController extends Controller
     public function listforum(){
     	$forum = forum::orderBy('created_at','DESC')->get();
     	$i=1;
+        $userinfo = $this->getinfo();
 
-        return view('/forum/listforum', compact('forum','i'));
+        return view('/forum/listforum', compact('forum','i','userinfo'));
+
 
     }
 

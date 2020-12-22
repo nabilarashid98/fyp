@@ -25,7 +25,7 @@ class LoginController extends Controller
             $request->session()->put('name', $user->name);
             
             if($user->role == 'admin'){
-                echo 'admin templates';
+                  return Redirect::route('admin');
             } else {
                 return Redirect::route('mainpage');
             }
@@ -62,7 +62,7 @@ class LoginController extends Controller
             $request->session()->put('name', $user->name);
             
             if($user->role == 'admin'){
-                echo 'admin templates';
+               return Redirect::route('admin');
             } else {
                 return Redirect::route('mainpage');
             }
