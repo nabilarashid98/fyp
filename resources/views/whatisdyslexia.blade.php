@@ -3,76 +3,33 @@
 @section('content')
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<br>
+<br>
+<br>
+<br>
 <style>
-	body {
-    background-color: #E0E0E0
-
+*{
+  margin: 0;
+  padding: 0;
 }
 
-
-.mt-100 {
-    margin-top: 100px;
-    margin-left: 200px
-}
-
-.card-header {
-    background-color: #DA95DE 
-}
-
-h5 {
-    color: #fff
-}
-
-.card-block {
-    margin-top: 10px
-}
-
-p.a {
-  font: 20px Arial, sans-serif;
-}
-
-p.b {
-  font: italic bold 12px/30px Georgia, serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-p{
-	text-align: center;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.row {
+#parent {
   display: flex;
+  justify-content: space-around;
 }
 
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 5px;
+#left {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 63%;
+ padding: 40px;
 }
 
-.center { 
-  margin: 0 auto; width: 400px; 
+#right {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 20%;
+  height: 20%;
 }
 
 youtube {
@@ -86,51 +43,63 @@ youtube {
     transform: translate(-50%, -50%);
  
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 </style>
-</head>
-<body>
-	
-	<div class="row mt-100">
-    <div class="col-md-8">
-        <div class="card">
-        	<br>
-            
-                <h1 class="text-center">Dyslexia ?</h5>
 
-                <br>	
-            
-               <div class="row">
-             <div class="column">
-            <div class="card-block">
-                <p class="text-center">
-                	
+
+<body>
+    <div id="parent">
+      <br>
+  
+        <div id="left">
+          <br>
+      
+        <h1 align="center"> What is Dyslexia ? </h1>
+          <br>
+ <p class="text-center">
+                  
 
 <img class="img-responsive" src="{{url('images/image 1.jpg')}}" width="460" height="345" alt="home">
-
-<p class="b">Dyslexia is a learning disability in reading.<br>
-People with dyslexia have trouble reading at a good pace and without mistakes. <br>
-They may also have a hard time with reading comprehension, spelling, and writing. <br>
-But these challenges aren’t a problem with intelligence.</p>
-    <br>
-
-
-  
+<br>
+<p>Dyslexia is a learning disability in reading.People with dyslexia have trouble reading at a good pace and without mistakes.There are no available statistics for Malaysia but it is estimated that 4% – 8 % of school going children have dyslexia.More boys than girls are affected than girls. 
+</p>
  
-<h1> What is Dyslexia ?
-</h1>
+<p > The children that have a dyslexia difficulty with poor reading, difficulty writing, or mixing up words. Adults may also have this developmental disability, too. Early in adulthood, several persons are diagnosed. Others do not know until they grow older that they have dyslexia.<br></p>
+
+<p>Children with dyslexia also have normal vision and are almost as intelligent as their colleagues. But in school, they fail further because it takes longer for them to read. Word processing issues will also make it difficult to spell, write, and speak clearly.</p>
 <br>
-<p class="b"> Dyslexia is a common condition that makes it hard to read. <br>
-Some experts believe that between 5 and 10 percent of people have it. <br>
-Others say as many as 17 percent of people show signs of reading challenges.</p>
+
+<h5>Are there any strengths with being dyslexics?</h5>
+<br>
+<ul>
+<li>Gifted dyslexics include some famous politicians (e.g. Lee Kuan Yew), performers (e.g. Whoopi Goldberg), artists (e.g. Leonardo da Vinci) and scientists (e.g. Albert Einstein)</li>
+<li>Some are very imaginative and creative</li>
+<li>Many are multi-dimensional thinkers</li>
+<li>They can also be very good with hand skills or sports</li>
+</ul>
 <br>
 <br>
 
+<h5>What are potential problems with dyslexics?</h5>
+<br>
+<ul>
+<li>They are often mislabelled as lazy, stupid or slow</li>
+<li>There is risk to a healthy self image as the child may develop poor self esteem</li>
+<li>If detection and management are delayed, the child may develop</li>
+<li>Emotional complications (eg depression)</li>
+<li>Behavioural problems (eg oppositional, conduct problems)</li>
+<li>Academic under-achievement (eg school drop-out)</li>
+</ul>
+<br>
 <div>
 <youtube class="your-centered-div">
-<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+<iframe width="420" height="345" src="https://www.youtube.com/embed/cJ85oYRC0Yg">
 </iframe>
 </youtube>
 </div>
@@ -140,16 +109,51 @@ Others say as many as 17 percent of people show signs of reading challenges.</p>
 
 
 
+        </div>
+      
+
+        <div id="right">
+          <br>
+          <h3 align="center">News Update</h3>
+          <br>
+         
 
 
+     <div class="card">
+     <div class="card" style="width:100%" style="height: 5%">
+   <img class="card-img-top" src="{{asset('images/new2.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Homeschooling During Coronavirus Tips for Parents</h5>
+      <p class="card-text">Home-schooling is a short-term response to COVID-19 school cuts or a long-term dedication to teaching your child, there are particular difficulties and needs for home-schooling children with dyslexia.</p>
+      <a href="{{ route('homeschoolingduringcovid19')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+  
+   <div class="card" style="width:100%" style="height: 30%">
+    <img class="card-img-top" src="{{asset('images/news3.jpeg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Emotional Support For Parents Of Dyslexic Children.</h5>
+      <p class="card-text">Some parents feel stress out to take care their dyslexic children because there are no emotional support from other parents or experts. Here are some tips for those who struggle with dyslexia kids.</p>
+      <a href="{{ route('emotionalsupport')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
 
-
-
-
+  
+   <div class="card" style="width:100%" style="height: 5%">
+ <img class="card-img-top" src="{{asset('images/news1.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">How COVID 19 Can Help Children With Dyslexia Thrive</h5>
+      <p class="card-text">he social isolation that resulted from the pandemic of COVID 19 now provides parents with an ability to observe and support their child who may have fallen through the net.</p>
+      <a href="{{ route('covid19thrivedyslexia')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+    </div>
 </body>
-
 </html>
-
 
 @endsection
 

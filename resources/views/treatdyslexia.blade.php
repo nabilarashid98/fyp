@@ -4,36 +4,41 @@
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<br>
+<br>
+<br>
+<br>
 <style>
-  body {
-    background-color: #E0E0E0
-
+*{
+  margin: 0;
+  padding: 0;
 }
 
-
-.mt-100 {
-    margin-top: 100px;
-    margin-left: 200px
+#parent {
+  display: flex;
+  justify-content: space-around;
 }
+
+#left {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 63%;
+ padding: 40px;
+}
+
+#right {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 20%;
+  height: 20%;
+}
+
 
 .card-header {
     background-color: #DA95DE 
 }
 
-h5 {
-    color: #fff
-}
+
 
 .card-block {
     margin-top: 10px
@@ -51,9 +56,7 @@ h1 {
   text-align: center;
 }
 
-p{
-  text-align: center;
-}
+
 
 img {
   display: block;
@@ -83,25 +86,29 @@ img {
 }
 
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <div id="parent">
+      <br>
   
-  <div class="row mt-100">
-    <div class="col-md-8">
-        <div class="card">
+        <div id="left">
           <br>
-            
-                <h1 class="text-center">Dyslexia ?</h5>
-
-                <br>  
-            
-               <div class="row">
+      
+        <h1 align="center"> How Dyslexia is Diagnosed ?</h5>
+        <div class="row">
              <div class="column">
             <div class="card-block">
                 <p class="text-center">
                   
 
-<img class="img-responsive" src="{{url('images/treat.jpg')}}" width="460" height="345" alt="home">
+<img class="img-responsive" src="{{url('images/diagnose.png')}}" width="600" height="345" alt="home">
 
 <ul class="b">There's no single test that can diagnose dyslexia. A number 
              of factors are considered : <br> <br>
@@ -137,15 +144,15 @@ img {
   
  <div class="container">
   <h2 class="text-center">What to do ? </h2>
-  <p>The .card-columns class creates a masonry-like grid of cards. </p>
+  <p>This is a step for parents or any guardians if they want to take their children for further checkup </p>
  
   <div class="card-columns">
     <div class="card bg-light">
       <div class="card-body text-center">
         <h4 class="text-center">1. Child Specialist</h4>
-        <p class="card-text">Go to the nearest specialist clininc<br>
-        for children to get referral letter before you go to hospital.<br>
-         The child specialist able to give advice whether your children<br>
+        <p>Go to the nearest specialist clininc
+        for children to get referral letter before you go to hospital.
+         The child specialist able to give advice whether your children
           have a dyslexia or not</p>
       </div>
     </div>
@@ -153,9 +160,7 @@ img {
     <div class="card bg-light">
       <div class="card-body text-center">
         <h4 class="text">2. Development Paediatrician</h4>
-        <p class="card-text">The development paedtrician/paedtrician<br> 
-        give some test or questionaire to your children. Them will<br> 
-      give you some advice and seek to refer opthomologist</p>
+        <p >The development paedtrician/paedtrician give some test or questionaire to your children. Them will give you some advice and seek to refer opthomologist.
       </div>
     </div>
   </div>
@@ -164,7 +169,7 @@ img {
     <div class="card bg-light">
       <div class="card-body text-center">
         <h4 class="text">3. Opthomologist</h4>
-        <p class="card-text">The doctor refer your children to seek <br>
+        <p >The doctor refer your children to seek <br>
         opthomologist because to rule out eye problem. Maybe your<br>
          children cannot read because the eye problem or reflactive error.</p>
       </div>
@@ -172,7 +177,7 @@ img {
     <div class="card bg-light">
       <div class="card-body text-center">
         <h4 class="text">4. Audiologist</h4>
-        <p class="card-text">Dyslexia is a language processing issue. They need to make a test with listening and so, it want to rule out the neurologist issue that related that refrain the children from hearing the sound. </p>
+        <p>Dyslexia is a language processing issue. They need to make a test with listening and so, it want to rule out the neurologist issue that related that refrain the children from hearing the sound. </p>
       </div>
     </div>  
   </div>
@@ -181,17 +186,17 @@ img {
     <div class="card bg-light">
       <div class="card-body text-center">
         <h4 class="text">5. Phsychologist</h4>
-        <p class="card-text">The psychologist give you some different<br>
-         test that related with educational and advise and help you<br>
+        <p >The psychologist give you some different
+         test that related with educational and advise and help you
           to seek occupational or speech therapist.</p>
       </div>
     </div>
     <div class="card bg-light">
       <div class="card-body text-center">
         <h4 class="text">6. Occupational/Speech Therapist</h4>
-        <p class="card-text">occupational therapists are in a unique <br>
-        position to support a dyslexic child's learning by addressing<br>
-         key components of skills such as oculomotor function, <br>
+        <p >Occupational therapists are in a unique 
+        position to support a dyslexic child's learning by addressing
+         key components of skills such as oculomotor function,
        executive functioning, and motor coordination.</p>
       </div>
     </div>
@@ -202,16 +207,48 @@ img {
    
  
 
+        </div>
+      
 
+        <div id="right">
+          <br>
+          <h3 align="center">News Update</h3>
+          <br>
+         
 
+     <div class="card">
+     <div class="card" style="width:100%" style="height: 5%">
+   <img class="card-img-top" src="{{asset('images/new2.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Homeschooling During Coronavirus Tips for Parents</h5>
+      <p class="card-text">Home-schooling is a short-term response to COVID-19 school cuts or a long-term dedication to teaching your child, there are particular difficulties and needs for home-schooling children with dyslexia.</p>
+      <a href="{{ route('homeschoolingduringcovid19')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+  
+   <div class="card" style="width:100%" style="height: 30%">
+    <img class="card-img-top" src="{{asset('images/news3.jpeg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Emotional Support For Parents Of Dyslexic Children.</h5>
+      <p class="card-text">Some parents feel stress out to take care their dyslexic children because there are no emotional support from other parents or experts. Here are some tips for those who struggle with dyslexia kids.</p>
+      <a href="{{ route('emotionalsupport')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
 
-
-
-
-
-
-
+  
+   <div class="card" style="width:100%" style="height: 5%">
+ <img class="card-img-top" src="{{asset('images/news1.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">How COVID 19 Can Help Children With Dyslexia Thrive</h5>
+      <p class="card-text">he social isolation that resulted from the pandemic of COVID 19 now provides parents with an ability to observe and support their child who may have fallen through the net.</p>
+      <a href="{{ route('covid19thrivedyslexia')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+    </div>
 </body>
-
 </html>
 @endsection

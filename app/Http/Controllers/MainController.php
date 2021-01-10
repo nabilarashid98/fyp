@@ -37,4 +37,19 @@ class MainController extends Controller
     {
         return view('financesupport');
     }
+
+    public function emotionalsupport()
+    {
+        return view('emotionalsupport');
+    }
+
+     public function covid19thrivedyslexia()
+    {
+        return view('covid19thrivedyslexia');
+    }
+
+     public function homeschoolingduringcovid19()
+    {
+        return view('homeschoolingduringcovid19');
+    }
 }

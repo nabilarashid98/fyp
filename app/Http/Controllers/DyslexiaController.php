@@ -38,4 +38,6 @@ class DyslexiaController extends Controller
     {
         return view('activitieswithdyslexiakids');
     }
+
+    
 }

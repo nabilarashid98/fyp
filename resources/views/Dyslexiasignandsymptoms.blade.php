@@ -4,34 +4,31 @@
 
 <br>
 <br>
-
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<br>
+<br>
 <style>
-* {
-  box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+#parent {
+  display: flex;
+  justify-content: space-around;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 15%;
-  padding: 0 10px;
+#left {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 63%;
+ padding: 40px;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#right {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 20%;
+  height: 20%;
 }
 
 img {
@@ -40,121 +37,115 @@ img {
   margin-right: auto;
 }
 
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-.left {
-  width: 70%;
-  align-content: center;
-}
-
-.right {
-  width: 20%;
-  align-content: center;
-}
-
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #E0E0E0;
-}
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <div id="parent">
+      <br>
+  
+        <div id="left">
+          <br>
+      
+        <h1 align="center"> Dyslexia Sign and Symptoms </h1>
+        <br>
 
+<img class="img-responsive" src="{{url('images/dyslexia.jpg')}}" width="400" height="400" alt="home">
 
+          <br>
+<p> Before your child starts kindergarten, symptoms of dyslexia may be hard to detect, although certain early clues can suggest a concern. Your child's teacher may be the first to find a problem after your child hits school age. Severity varies, but when an infant begins learning to read, the situation always becomes obvious. These activities are useful for all kids, but especially those at risk for dyslexia.</p>
+<br>
 
-<div class="row">
-  <div class="column left">
-    <div class="card">
-      <img class="img-responsive" src="{{url('images/image 1.jpg')}}" width="460" height="345" alt="home">
+<h5> Pre-School Children 
+</h5>
+<p>In certain cases, when a child begins kindergarten, signs of dyslexia may be observed. 
+  <br>
 
-<p class="b">Dyslexia is a learning disability in reading.<br>
-People with dyslexia have trouble reading at a good pace and without mistakes. <br>
-They may also have a hard time with reading comprehension, spelling, and writing. <br>
-But these challenges aren’t a problem with intelligence.</p>
+Symptoms might include: </p>
+
+<ul>
+  <li>impaired growth of speech relative to other children of the same generation (although this can have many different causes). </li>
+  <li>difficulties with vocabulary, such as not being able to correctly pronounce long terms and "jumbling" phrases (for example, saying "hecilopter" instead of "helicopter", or "beddy tear" instead of "teddy bear") </li>
+  <li>difficulties voicing themselves using spoken words, such as not being able to recall the right word to use, or wrongly bringing together sentences </li>
+  <li>trouble with, or no interest in, learning alphabet letters</li>
+</ul>  
+ 
     <br>
 
+<h5> School Children</h5>
+<p>Dyslexia signs typically become more evident as kids enter school and tend to rely more on learning how to read and write.<br>
 
+In children aged 5 to 12, the signs of dyslexia include:</p>
+<ul>
+  <li>Reading way below the planned age range </li>
+  <li>Avoiding activities including reading</li>
+  <li>Trouble seeing (and sometimes hearing) similarities and letter and phrase variations </li>
+  <li>Spelling difficulties </li>
+  <li>Spending an extraordinarily long time doing assignments including reading or writing </li>
+  <li>Putting letters and numbers in the wrong way round (such as writing "6" instead of "9", or "b" instead of "d") </li>
+  <li>Poor reading or making mistakes when reading aloud</li>
+
+</ul>  
+    <br>
   
+ <h5>Associated Problems</h5>
+<ul>
+ <p>Any individuals with dyslexia may have other difficulties that are not specifically related to reading or writing.<br>
+
+This include the following: </p>
+  <li>Difficulty with numbers (dyscalculia) </li>
+  <li>Bad recall in the short term </li>
+  <li>Concentration difficulties and low attention time, namely attention deficit hyperactivity disorder (ADHD) </li>
+  <li>Physical synchronisation issues (developmental co-ordination disorder, also called DCD or dyspraxia)</li>
  
-<h1> What is Dyslexia ?
-</h1>
-<br>
-<p class="b"> Dyslexia is a common condition that makes it hard to read. <br>
-Some experts believe that between 5 and 10 percent of people have it. <br>
-Others say as many as 17 percent of people show signs of reading challenges.</p>
-<br>
-<br>
+</ul>  
+        </div>
+      
 
-<div>
-<youtube class="your-centered-div">
-<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-</youtube>
-</div>
-
-
-
-
-
-
-
-    </div>
-  </div>
-
+        <div id="right">
+          <br>
+          <h3 align="center">News Update</h3>
+          <br>
   
-  
-  <div class="column right">
-    <div class="card">
+     <div class="card">
      <div class="card" style="width:100%" style="height: 5%">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+   <img class="card-img-top" src="{{asset('images/new2.jpg')}}" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+      <h5 class="card-title">Homeschooling During Coronavirus Tips for Parents</h5>
+      <p class="card-text">Home-schooling is a short-term response to COVID-19 school cuts or a long-term dedication to teaching your child, there are particular difficulties and needs for home-schooling children with dyslexia.</p>
+      <a href="{{ route('homeschoolingduringcovid19')}}" class="btn btn-primary stretched-link">Read More</a>
     </div>
   </div>
   
-  <br>
-  <br>
   
    <div class="card" style="width:100%" style="height: 30%">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="{{asset('images/news3.jpeg')}}" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+      <h5 class="card-title">Emotional Support For Parents Of Dyslexic Children.</h5>
+      <p class="card-text">Some parents feel stress out to take care their dyslexic children because there are no emotional support from other parents or experts. Here are some tips for those who struggle with dyslexia kids.</p>
+      <a href="{{ route('emotionalsupport')}}" class="btn btn-primary stretched-link">Read More</a>
     </div>
   </div>
 
-  <br>
-  <br>
+  
    <div class="card" style="width:100%" style="height: 5%">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+ <img class="card-img-top" src="{{asset('images/news1.jpg')}}" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+      <h5 class="card-title">How COVID 19 Can Help Children With Dyslexia Thrive</h5>
+      <p class="card-text">he social isolation that resulted from the pandemic of COVID 19 now provides parents with an ability to observe and support their child who may have fallen through the net.</p>
+      <a href="{{ route('covid19thrivedyslexia')}}" class="btn btn-primary stretched-link">Read More</a>
     </div>
   </div>
   
     </div>
   </div>
-</div>
-
+    </div>
 </body>
 </html>
-
-
  @endsection

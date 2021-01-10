@@ -89,8 +89,7 @@ img {
       <p>Your results will be shown as soon you finish answering the questions.
       </p>
 
-      <button class="button" style="vertical-align:middle"  a href= "{{ route('screening') }}">
-        <span>Take a test now </span></button>
+     <a href="{{ route('screening')}}" class="btn btn-primary stretched-link">Take a test now
 
      <img src="images/disleksia.jpg">
 

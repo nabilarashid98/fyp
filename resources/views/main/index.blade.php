@@ -14,7 +14,14 @@
 </div>
 
 
+
 <style>
+
+ body {
+  font-family: Georgia, serif;
+}
+
+
   .form-control{
     background: transparent;
 }
@@ -172,29 +179,68 @@ form.go-right input:focus + label, form.go-right textarea:focus + label {
   </div>
 
 
+
+
+<div class="container p-3 my-3 bg-white text-dark">
+  <br>
+  <br>
+  
+  <div id="about" class="section">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-5">
+<div class="section-title">
+<h1 class="title">Welcome to HelperDyslexia</h1>
+<br>
+<p class="p1">This is a platform to help parents for those have a dyslexia children. This system provides any information about dyslexia such as beneficial info about dyslexia such as symptoms,myhts and type of method teaching for dyslexia, forum for parents to discuss any confusion about dyslexia, list of school that suitable for dyslexia kids and screnning test to know wheather your children have a dyslexia or not.</p>
+</div>
+
+</div>
+
+
+<div class="col-md-offset-1 col-md-6">
+<a href="#" class="about-video">
+<i class="play-icon fa fa-play"></i>
+<img src="images/helper.png" width="600" height="350" alt="">
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+<br>
 <br>
 
 <div class="container">
-  <h2>News Update</h2>
-  <p>Add the .stretched-link class to a link inside the card, and it will make the whole card clickable (the card will act as a link):</p>
-
+  <h2 align="center">News Update</h2>
+  <br>
+ 
    <div class="card-columns">
   <div class="card" style="width:300px">
     <img class="card-img-top" src="images/new2.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h5 class="card-title">Homeschooling During Coronavirus Tips for Parents</h5>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">Read More</a>
+      <p class="card-text">Home-schooling is a short-term response to COVID-19 school cuts or a long-term dedication to teaching your child, there are particular difficulties and needs for home-schooling children with dyslexia.</p>
+      <a href="{{ route('homeschoolingduringcovid19')}}"class="btn btn-primary stretched-link">Read More</a>
     </div>
   </div>
 
 
-  <div class="card" style="width:300px">
+  <div class="card" style="width:290px">
     <img class="card-img-top" src="images/news3.jpeg" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h5 class="card-title">Emotional Well-Being Support Available For Parents Of Dyslexic Children.</h5>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">Read More</a>
+      <h5 class="card-title">Emotional Support For Parents Of Dyslexic Children.</h5>
+      <p class="card-text">Some parents feel stress out to take care their dyslexic children because there are no emotional support from other parents or experts. Here are some tips for those who struggle with dyslexia kids.</p>
+      <a href="{{ route('emotionalsupport')}}" class="btn btn-primary stretched-link">Read More</a>
     </div>
   </div>
 
@@ -202,9 +248,9 @@ form.go-right input:focus + label, form.go-right textarea:focus + label {
   <div class="card" style="width:300px">
     <img class="card-img-top" src="images/news1.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h5 class="card-title">How COVID 19 Can Help Children With Dyslexia Thrive</h5>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary stretched-link">Read More</a>
+      <h5 class="card-title">Why COVID 19 Will Help Dyslexia Children Thrive</h5>
+      <p class="card-text">The social isolation that resulted from the pandemic of COVID 19 now provides parents with an ability to observe and support their child who may have fallen through the net. </p>
+      <a href="{{ route('covid19thrivedyslexia')}}" class="btn btn-primary stretched-link">Read More</a>
     </div>
   </div>
 
@@ -219,48 +265,132 @@ form.go-right input:focus + label, form.go-right textarea:focus + label {
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <div class="col-xs-1" align="center">
-        <h2 class="featurette-heading" >Successful and famous people with dyslexia. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">These individuals make a difference because of their difference. Some of the biggest names in movies, music and sports are people who struggled in school with learning and thinking differences. Here are a number of the celebrities who found their passion and overcame their challenges.</p>
-      </div>
-    </div>
-      <div class="col-md-5">
-       <img class="img-responsive" src="images/image 1.jpg" width="350" height="350" alt="about">
-      </div>
-    </div>
+    <div class="container p-3 my-3 bg-white text-dark">
+  <br>
+  <br>
+  
+  <div id="about" class="section">
 
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-5">
+<div class="section-title">
+<h1 class="title">PPKI School</h1>
+<br>
+<p class="p1">PPKI is a stand for Program Pendidikan Khas Integrasi. It is a program under the public school that places students with disabilities from ADHD, autisme, down syndrome and spactics. Here's the steps how to apply PPKI school</p>
+<a href="{{ route('applypkk')}}" class="primary-button">Read More</a>
+</div>
+
+</div>
+
+
+<div class="col-md-offset-1 col-md-6">
+<a href="#" class="about-video">
+<i class="play-icon fa fa-play"></i>
+<img src="images/ppki.png" width="600" height="350" alt="">
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+  
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      
-      <div class="col-md-7 order-md-2">
-        <div class="col-xs-1" align="center">
-        <h2 class="featurette-heading">Dyslexia can occur anywhere on the IQ Spectrum! <span class="text-muted">Low IQ CAN NOT rule out dyslexia.</span></h2>
-        <p class="lead">Regardless of high or low overall scores on an IQ test, children with dyslexia show similar patterns of brain activity, according to researchers supported by the National Institutes of Health.</p>
-      </div>
-    </div>
-      <div class="col-xs-1" align="left">
-      <div class="col-md-5 order-md-1">
-         <img class="left" src="images/image 4.png" width="350" height="350" alt="home">
-      </div>
-    </div>
-    </div>
+     <div class="container p-3 my-3 bg-white text-dark">
+  <br>
+  <br>
+  
+  <div id="about" class="section">
 
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-5">
+<div class="section-title">
+<h1 class="title">Method Teaching For Dyslexia</h1>
+<br>
+<p class="p1">Dyslexic students have a learning difference. Their minds can't retain knowledge as easily as non-dyslexics, sometimes making learning a long, challenging, and often impossible task.However, with the help of a compassionate teacher – well trained with proven and tested techniques – dyslexic students are able to learn and become extremely competitive.</p>
+<a href="{{ route('methodteachingdyslexia')}}" class="primary-button">Read More</a>
+</div>
+
+</div>
+
+
+<div class="col-md-offset-1 col-md-6">
+<a href="#" class="about-video">
+<i class="play-icon fa fa-play"></i>
+<img src="images/student.png" width="600" height="350" alt="">
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+  
+
+    
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <div class="col-xs-1" align="center">
-        <h2 class="featurette-heading">Signs of dyslexia. <span class="text-muted">Get know about it.</span></h2>
-        <p class="lead">Dyslexia is a learning disorder that involves difficulty reading due to problems identifying speech sounds and learning how they relate to letters and words (decoding). Also called reading disability, dyslexia affects areas of the brain that process language.</p>
-      </div>
-    </div>
-      <div class="col-md-5">
-        <img class="img-responsive" src="images/image 3.jpg" width="350" height="350" alt="home">
-      </div>
-    </div>
+     <div class="container p-3 my-3 bg-white text-dark">
+  <br>
+  <br>
+  
+  <div id="about" class="section">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-5">
+<div class="section-title">
+<h1 class="title">Forum For Dyslexia's Parents</h1>
+<br>
+<p class="p1">This is a forum for parents to dicuss any info or curious that related to dyslexia.Here to add any info or you curious about dyslexia into this forum.</p>
+<a href="{{ route('addforum')}}" class="primary-button">Read More</a>
+</div>
+
+</div>
+
+
+<div class="col-md-offset-1 col-md-6">
+<a href="#" class="about-video">
+<i class="play-icon fa fa-play"></i>
+<img src="images/FORUM.png" width="600" height="350" alt="">
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+  
+
+
+   
         <hr class="featurette-divider">
 
 

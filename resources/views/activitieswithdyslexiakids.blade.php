@@ -2,54 +2,33 @@
 
 @section('content')
 
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<br>
+<br>
+<br>
+<br>
 <style>
-	body {
-    background-color: #E0E0E0
-
+*{
+  margin: 0;
+  padding: 0;
 }
 
-
-.mt-100 {
-    margin-top: 100px;
-    margin-left: 200px
+#parent {
+  display: flex;
+  justify-content: space-around;
 }
 
-.card-header {
-    background-color: #DA95DE 
+#left {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 63%;
+ padding: 40px;
 }
 
-
-
-.card-block {
-    margin-top: 10px
-}
-
-p.a {
-  font: 20px Arial, sans-serif;
-}
-
-p.b {
-  font: italic bold 12px/30px Georgia, serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-p{
-	text-align: left;
+#right {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 20%;
+  height: 20%;
 }
 
 img {
@@ -59,61 +38,28 @@ img {
 }
 
 
-.row {
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 30px;
-}
-
-.center { 
-  margin: 0 auto; width: 400px; 
-}
-
-youtube {
-    width: 560px; /* you have to have a size or this method doesn't work */
-    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
-
-    position: center;
-    margin: auto;
-    top: 50%;
-    margin-left: 170px;
-    transform: translate(-50%, -50%);
- 
-}
-}
-
-
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	
-	<div class="row mt-100">
-    <div class="col-md-8">
-        <div class="card">
-        	<br>
-            
-                <h1 class="text-center">Activities with dyslexia kids.</h5>
-
-                <br>	
-            
-               <div class="row">
-             <div class="column">
-            <div class="card-block">
-                <p class="text-center">
-                	
-
-<img class="img-responsive" src="{{url('images/new3.jpg')}}" width="460" height="300" alt="home">
-
-<h5> What is PPKI ? 
-</h5>
-<p> If you feel like your child is at risk for dyslexia, here are some of the activities that can be very effective in helping them improve skills that can allow them to compensate for the challenges that accompany the disability.
-  <br>
-
-These activities are useful for all kids, but especially those at risk for dyslexia.</p>
+    <div id="parent">
+      <br>
+  
+        <div id="left">
+          <br>
+      
+        <h1 align="center"> Activities With Dyslexia Kids </h1>
+          <br>
+          <img class="img-responsive" src="{{url('images/ACTIVITY.jpg')}}" width="550" height="345" alt="home">
+          <br>
+          <br>
+<p> If you feel like your child is at risk for dyslexia, here are some of the activities that can be very effective in helping them improve skills that can allow them to compensate for the challenges that accompany the disability. These activities are useful for all kids, but especially those at risk for dyslexia.</p>
     <br>
 
 <h5> Fine motor activities
@@ -131,53 +77,77 @@ Activities that can help with improving these skills: </p>
   <p><a href="https://handsonaswegrow.com/fine-motor-skills-activities/">You can find more ideas here!</a></p>
     <br>
 
-<h5> Characteristic of students with special needs ? 
-</h5>
+<h5> Spelling Stations</h5>
+<p> Dyslexic students fail to see the series of letters in a word, and sometimes mentally reorder letters in sentences.Education Corner has developed "Spelling Stations" to support children who face spelling difficulties due to dyslexia. This lesson plan allows students  to sharpen their spelling skills by using different visual, auditory, literary, and verbal reinforcement stations.<br>
+You can create a range of stations depending on the materials and services at your school. Here are a few ideas to get you started: </p>
+
 <ul>
-  <li>Dyslexia</li>
-  <li>Autisme</li>
-  <li>Syndrome down</li>
-  <li>Epilepsy</li>
-  <li>Slow learner</li>
-  <li>Cerebral palsy</li>
-  <li>Discalculia</li>
-  <li>Dysgraphia</li>
-  <li>Acalculia</li>
-</ul>  
-    <br>
+ <li>Letter magnets: students spell words of magnetic letters on metal surfaces.</li>
+<li>Puzzle time: this station consists of spelling worksheets (such as crossword puzzles and word searches) to promote the identification of terms.</li>
+<li>Colorful terms: students write assigned spelling words using various colours for each letter to establish connections between colours and letters, encouraging the preservation of accurate letter sequences.</li>
+<li>Word painting: using pencils, stickers, glitter and other art materials, students spell out and decorate terms on construction paper, associating the spelling of the word with creative expression.</li>
+</ul>
+
+<h5> Reading With Your Children</h5>
+<p>Kids seem to hate doing things they know they're not doing right. That's reading for children with dyslexia. So, strive to cultivate as much of their passion for reading as possible. Encourage them to gather their own books and create their own personal libraries. Support them pick the books they want so you can read them together. Create a family game that you both love reading.<br><br>
+Here are a few examples of fun rhyming books you can read during this activity:</p>
+<ul>
+<li>Sheep in a Jeep by Nancy Shaw</li>
+<li>Brown Bear, Brown Bear, What Do You See? By Eric Carle and Bill Martin, Jr.</li>
+<li>Where the Sidewalk Ends by Shel Silverstein</li>
+<li>Llama Llama Red Pajama by Anna Dewdney</li>
+<li>One Fish, Two Fish, Red Fish, Blue Fish by Dr. Seuss</li>
+</ul>
+
+<h5>AudioBooks</h5>
+<p>Since children with dyslexia are always poor readers, assigning them to print books on their own will frustrate them. Instead, consider incorporating audiobook files to a take-home print book. That way, the student can read along with the narrator without being wrapped up in challenging words or letters.
   
- <h5> Procedure for admission to PPKI without OKU card and get additional assistance during examination without OKU Card
-</h5>
-<ul>
-  <li>Get the BPPOKU form issued by JKM, (OKU registration application form).<br>
-      <p><a href="https://www.moh.gov.my/index.php/file_manager/dl_item/624746305a584e305833426b5a69397661335576516d39795957356e5831426c6257396f62323568626c39515a57356b59575a3059584a68626c3950533155756347526d">Borang BPPOKU</a></p>
-  </li>
-  <li>Fill in the BPPOKU form from JKM and get the doctor's confirmation</li>
-  <li>Submit a copy to PPD to apply for admission to PPKI</li>
-  <li>A copy to PPKI School after getting placement from PPD.</li>
-  <li>A copy to JKM if you want to apply for OKU Card (If you do not want to apply, there is no need to submit to JKM)</li><br>
-  <p>* The complete BPPOKU form with the confirmation of the Doctor is an official document with the same value of use as OKU Card when dealing with MoE (BPPOKU form users do not get full facilities like OKU Cardholders and will not get EMK allowance or MAS low fare facility, KTM etc.)</p>
- 
-</ul>  
-    <br>
+</p>
+        </div>
+      
 
-<br>
-<br>
+        <div id="right">
+          <br>
+          <h3 align="center">News Update</h3>
+          <br>
+         
 
 
+     <div class="card">
+     <div class="card" style="width:100%" style="height: 5%">
+   <img class="card-img-top" src="{{asset('images/new2.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Homeschooling During Coronavirus Tips for Parents</h5>
+      <p class="card-text">Home-schooling is a short-term response to COVID-19 school cuts or a long-term dedication to teaching your child, there are particular difficulties and needs for home-schooling children with dyslexia.</p>
+      <a href="{{ route('homeschoolingduringcovid19')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+  
+   <div class="card" style="width:100%" style="height: 30%">
+    <img class="card-img-top" src="{{asset('images/news3.jpeg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Emotional Support For Parents Of Dyslexic Children.</h5>
+      <p class="card-text">Some parents feel stress out to take care their dyslexic children because there are no emotional support from other parents or experts. Here are some tips for those who struggle with dyslexia kids.</p>
+      <a href="{{ route('emotionalsupport')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
+  
+   <div class="card" style="width:100%" style="height: 5%">
+ <img class="card-img-top" src="{{asset('images/news1.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">How COVID 19 Can Help Children With Dyslexia Thrive</h5>
+      <p class="card-text">he social isolation that resulted from the pandemic of COVID 19 now provides parents with an ability to observe and support their child who may have fallen through the net.</p>
+      <a href="{{ route('covid19thrivedyslexia')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+    </div>
 </body>
-
 </html>
-
 
 @endsection
 

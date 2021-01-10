@@ -70,9 +70,13 @@ class ForumController extends Controller
 
       public function edit($id){
 
+        $user = $this->getinfo();
+
         $detailforum = Forum::find($id);
 
         return view('/forum/editforum', compact('detailforum'));
+
+
     }
 
     public function destroy($id){

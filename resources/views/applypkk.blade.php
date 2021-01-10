@@ -2,63 +2,36 @@
 
 @section('content')
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  
+<br>
+<br>
+<br>
+<br>
 <style>
-  body {
-    background-color: #E0E0E0
-
+*{
+  margin: 0;
+  padding: 0;
 }
 
-
-.mt-100 {
-    margin-top: 100px;
-    margin-left: 200px
+#parent {
+  display: flex;
+  justify-content: space-around;
 }
 
-.card-header {
-    background-color: #DA95DE 
+#left {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 63%;
+ padding: 40px;
 }
 
-
-
-.card-block {
-    margin-top: 10px
+#right {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 20%;
+  height: 20%;
 }
 
-p.a {
-  font: 20px Arial, sans-serif;
-}
-
-p.b {
-  font: italic bold 12px/30px Georgia, serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-}
-
-p{
-  text-align: left;
-}
-
-
-h1 {
-  text-align: center;
-}
 
 img {
   display: block;
@@ -66,54 +39,24 @@ img {
   margin-right: auto;
 }
 
-
-.row {
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 30px;
-}
-
-.center { 
-  margin: 0 auto; width: 400px; 
-}
-
-youtube {
-    width: 560px; /* you have to have a size or this method doesn't work */
-    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
-
-    position: center;
-    margin: auto;
-    top: 50%;
-    margin-left: 170px;
-    transform: translate(-50%, -50%);
- 
-}
-}
-
-
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <div id="parent">
+      <br>
   
-  <div class="row mt-100">
-    <div class="col-md-8">
-        <div class="card">
+        <div id="left">
           <br>
-            
-                <h1>Procedure to apply PPKI and additional time during examination</h1>
-
-                <br>  
-            
-               <div class="row">
-             <div class="column">
-            <div class="card-block">
-                <p class="text-center">
-                  
-
+      
+        <h1 align="center"> What is PPKI ? </h5>
+       
 <img class="img-responsive" src="{{url('images/ppki.jpg')}}" width="400" height="400" alt="home">
 <br>
 <br>
@@ -151,7 +94,7 @@ youtube {
 </h5>
 <ul>
   <li>Get the BPPOKU form issued by JKM, (OKU registration application form).<br>
-  	  <p><a href="https://www.moh.gov.my/index.php/file_manager/dl_item/624746305a584e305833426b5a69397661335576516d39795957356e5831426c6257396f62323568626c39515a57356b59575a3059584a68626c3950533155756347526d">Borang BPPOKU</a></p>
+      <p><a href="https://www.moh.gov.my/index.php/file_manager/dl_item/624746305a584e305833426b5a69397661335576516d39795957356e5831426c6257396f62323568626c39515a57356b59575a3059584a68626c3950533155756347526d">Borang BPPOKU</a></p>
   </li>
   <li>Fill in the BPPOKU form from JKM and get the doctor's confirmation</li>
   <li>Submit a copy to PPD to apply for admission to PPKI</li>
@@ -160,25 +103,51 @@ youtube {
   <p>* The complete BPPOKU form with the confirmation of the Doctor is an official document with the same value of use as OKU Card when dealing with MoE (BPPOKU form users do not get full facilities like OKU Cardholders and will not get EMK allowance or MAS low fare facility, KTM etc.)</p>
  
 </ul>  
-    <br>
+        </div>
+      
 
-<br>
-<br>
+        <div id="right">
+          <br>
+          <h3 align="center">News Update</h3>
+          <br>
+         
+<div class="card">
+     <div class="card" style="width:100%" style="height: 5%">
+   <img class="card-img-top" src="images/new2.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Homeschooling During Coronavirus Tips for Parents</h5>
+      <p class="card-text">Home-schooling is a short-term response to COVID-19 school cuts or a long-term dedication to teaching your child, there are particular difficulties and needs for home-schooling children with dyslexia.</p>
+      <a href="{{ route('homeschoolingduringcovid19')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  
+   <div class="card" style="width:100%" style="height: 30%">
+    <img class="card-img-top" src="images/news3.jpeg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">Emotional Support For Parents Of Dyslexic Children.</h5>
+      <p class="card-text">Some parents feel stress out to take care their dyslexic children because there are no emotional support from other parents or experts. Here are some tips for those who struggle with dyslexia kids.</p>
+      <a href="{{ route('emotionalsupport')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+  <br>
+  <br>
+   <div class="card" style="width:100%" style="height: 5%">
+ <img class="card-img-top" src="images/news1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h5 class="card-title">How COVID 19 Can Help Children With Dyslexia Thrive</h5>
+      <p class="card-text">he social isolation that resulted from the pandemic of COVID 19 now provides parents with an ability to observe and support their child who may have fallen through the net.</p>
+      <a href="{{ route('covid19thrivedyslexia')}}" class="btn btn-primary stretched-link">Read More</a>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+    </div>
 </body>
-
 </html>
 
 @endsection

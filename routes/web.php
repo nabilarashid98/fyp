@@ -39,6 +39,10 @@ Route::get('/main','MainController@index')->name('mainpage');
 Route::get('/mainscreening','MainController@mainscreening')->name('mainscreening');
 Route::get('/applypkk','MainController@applypkk')->name('applypkk');
 Route::get('/financesupport','MainController@financesupport')->name('financesupport');
+Route::get('/emotionalsupport','MainController@emotionalsupport')->name('emotionalsupport');
+Route::get('/covid19thrivedyslexia','MainController@covid19thrivedyslexia')->name('covid19thrivedyslexia');
+Route::get('/homeschoolingduringcovid19','MainController@homeschoolingduringcovid19')->name('homeschoolingduringcovid19');
+
 
 //Feedback
 Route::post('/feedback/store', 'FeedbackController@store')->name('storefeedback');
@@ -93,3 +97,5 @@ Route::get('/admin/forum/delete/{id}','AdminController@destroyforum');
 Route::get('/admin/forum/details/{id}', 'AdminController@detailforum')->name('admindetailforum');
 Route::get('/admin/forum/comment/delete/{id}', 'AdminController@destroycomment');
 Route::post('/admin/forum/comment/add', 'AdminController@storecomment')->name('adminaddcomment');
+
+
